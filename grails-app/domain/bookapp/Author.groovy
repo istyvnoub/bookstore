@@ -1,17 +1,14 @@
 package bookapp
 
-
-
 class Author {
     String name
+    static hasMany = [books: Book]
 
-    static hasMany=[books: Books]
-
-    static mapping ={
+    static mapping = {
         books cascade: 'all-delete-orphan'
     }
 
     static constraints = {
-         books nullable:false
+        books nullable: false
     }
 }
