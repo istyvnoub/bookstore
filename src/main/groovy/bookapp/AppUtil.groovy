@@ -1,3 +1,5 @@
+package bookapp
+
 import org.grails.web.util.WebUtils
 
 class AppUtil {

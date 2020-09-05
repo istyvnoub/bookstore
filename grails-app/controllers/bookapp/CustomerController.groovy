@@ -1,13 +1,13 @@
 package bookapp
 
 class CustomerController {
-    static scaffold=Customer
+    //static scaffold=Customer
 
     def calculationsService
     CustomerService customerService
     def index() {
         def response= customerService.list(params)
-        [customerInstancelist:response.list, total:response.count]
+        [customerlist:response.list, total:response.count]
 
     }
     def create(){
