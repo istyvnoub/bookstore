@@ -52,14 +52,14 @@ class CustomerController {
     }
     def edit(Integer id) {
         if (flash.redirectParams) {
-            [member: flash.redirectParams]
+            [customer: flash.redirectParams]
         } else {
             def response = customerService.getById()
             if (!response) {
                 flash.message = AppUtil.infoMessage(g.message(code: "invalid.entity"), false)
                 redirect(controller: "customer", action: "index")
             } else {
-                [member: response]
+                [customer: response]
             }
         }
     }
