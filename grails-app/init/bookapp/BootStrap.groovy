@@ -13,24 +13,24 @@ class BootStrap {
 	Author.withTransaction { status ->
      	    Author author = new Author(name:"Yvan Loic",books:[book1, book2]).save(failOnError: true)
 	}
-/*
-        new Customer(phone: 8015551212, firstName: "Luther", lastName: "Allison", totalPoints: 1).save()
-        new Customer(phone: 2135551212, firstName: "Bessie", lastName: "Brown", totalPoints: 2).save()
-        new Customer(phone: 6055551212, firstName: "Bo", lastName: "Diddley", totalPoints: 3).save()
-        new Customer(phone: 6165551212, firstName: "Leroy", lastName: "Foster", totalPoints: 4).save()
-        new Customer(phone: 8015554321, firstName: "Earl", lastName: "Hooker", totalPoints: 5).save()
-        new Customer(phone: 7315551212, firstName: "Maggie", lastName: "Jones", totalPoints: 5).save()
-        new Customer(phone: 8185551212, firstName: "Nick", lastName: "Moss", totalPoints: 4).save()
-        new Customer(phone: 7085551212, firstName: "Odie", lastName: "Payne", totalPoints: 3).save()
-        new Customer(phone: 4155551212, firstName: "Jonny", lastName: "Shines", totalPoints: 2).save()
-        new Customer(phone: 7225551212, firstName: "Ethel", lastName: "Waters", totalPoints: 1).save()
-        new Customer(phone: 6045551212, firstName: "Scrapper", lastName: "Blackwell", totalPoints: 1).save()
-        new Customer(phone: 7315551122, firstName: "Archie", lastName: "Edwards", totalPoints: 2).save()
-        new Customer(phone: 5145551212, firstName: "Jessie", lastName: "Fuller", totalPoints: 3).save()
-        new Customer(phone: 4085551212, firstName: "Ida", lastName: "Goodson", totalPoints: 4).save()
-        new Customer(phone: 8015551234, firstName: "Bumble Bee", lastName: "Smith", totalPoints: 5).save()
-        new Customer(phone: 4315551212, firstName: "Sippie", lastName: "Wallace", totalPoints: 4).save()
-*/
+
+        new Customer( firstName: "Luther", lastName: "Allison",email: "luther@mai.com").save()
+        new Customer( firstName: "Bessie", lastName: "Brown",email: "Bessie@mai.com").save()
+        new Customer( firstName: "Bo", lastName: "Diddley",email: "B@mai.com").save()
+        new Customer( firstName: "Leroy", lastName: "Foster",email: "leroy@mai.com").save()
+        new Customer( firstName: "Earl", lastName: "Hooker",email: "Earl@mai.com").save()
+        new Customer( firstName: "Maggie", lastName: "Jones",email: "Maggie@mai.com").save()
+        new Customer( firstName: "Nick", lastName: "Moss",email: "Nick@mai.com").save()
+        new Customer( firstName: "Odie", lastName: "Payne",email: "Odie@mai.com").save()
+        new Customer( firstName: "Jonny", lastName: "Shines",email: "Jonny@mai.com").save()
+        new Customer( firstName: "Ethel", lastName: "Waters",email: "Ethel@mai.com").save()
+        new Customer( firstName: "Scrapper", lastName: "Blackwell",email: "Scrapper@mai.com").save()
+        new Customer( firstName: "Archie", lastName: "Edwards",email: "Archie@mai.com").save()
+        new Customer( firstName: "Jessie", lastName: "Fuller",email: "Jessie@mai.com").save()
+        new Customer( firstName: "Ida", lastName: "Goodson",email: "Ida@mai.com").save()
+        new Customer( firstName: "Bumble Bee", lastName: "Smith",email: "Bumblebee@mai.com").save()
+        new Customer( firstName: "Sippie", lastName: "Wallace", email: "Sippie@mai.com").save()
+
 
     }
     def destroy = {
