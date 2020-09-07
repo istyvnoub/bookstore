@@ -48,4 +48,9 @@ class CustomerService {
         }
         return [list: customerList, count: Customer.count()] //return a list and Anzahl con Customer
     }
+    def delete(Customer customer){
+        customer.delete(flush: true)
+
+        return true
+    }
 }
