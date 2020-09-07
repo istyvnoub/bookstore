@@ -22,7 +22,7 @@
           %{--Table Actions --}%
           <td>
             <div class="btn-group">
-              <g:link controller="customer" action="details" class="btn btn-secondary" id="${info.id}"><i class="fas fa-eye"></i></g:link>
+              <g:link controller="customer" action="details" class="btn btn-secondary" id="${info.id}"><i class="fas fa-eye"></i></g:link> %{--id -> which im going to send to the link--}%
               <g:link controller="customer" action="edit" class="btn btn-secondary" id="${info.id}"><i class="fas fa-edit"></i></g:link>
               <g:link controller="customer" action="delete" id="${info.id}" class="btn btn-secondary delete-confirmation"><i class="fas fa-trash"></i></g:link>
             </div>
@@ -31,5 +31,9 @@
       </g:each>
       </tbody>
     </table>
+    %{--pagination --}%
+    <div class="paginate">
+      <g:paginate total="${total ?: 0}" />
+    </div>
   </div>
 </div>
