@@ -15,7 +15,7 @@
   <UIHelper:renderErrorMessage fieldName="email" model="${customer}" errorMessage="Your Email Address is not Valid / Already Exist in System"/>
 </div>
 
-<g:if test="${!edit}">
+<g:if test="${!edit}">%{-- if edit=yess then Passwordfiel will not appear--}%
   <div class="form-group">
     <label><g:message code="password"/> *</label>
     <g:passwordField name="password" class="form-control" value="${customer?.password}" placeholder="Please Enter Password"/>
