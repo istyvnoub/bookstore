@@ -63,5 +63,35 @@ class CustomerController {
             }
         }
     }
+    def update(){
+        def response =customerService.getById(params.id)
+        if(!response){
+            redirect(controller: "customer", action: "index")
+        }else {
+            response =customerService.update(response,params)
+            if(!response.isSuccess){
+                redirect(controller: "customer",action: "edit")
+            }else {
+                redirect(controller: "customer",action: "index")
+            }
+        }
+    }
+    def delete(){
+        def response= customerService.getById(params.id)
+        if(!response){
+            redirect(controller: "customer",action: "index")
+        }else{
+            response=customerService.delete(response)
+            redirect(controller: "customer",action: "index")
+        }
+    }
+    def details(Integer id){
+        def response=customerService.getById(id)
+        if(!response){
+            redirect(controller: "customer",action: "index")
+        }else{
+            [customer: response]
+        }
+    }
 
 }
