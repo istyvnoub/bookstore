@@ -46,6 +46,6 @@ class CustomerService {
                 order("id", "desc")
             }
         }
-        return [list: customerList, count: customerList.totalCount]
+        return [list: customerList, count: Customer.count()] //return a list and Anzahl con Customer
     }
 }
