@@ -25,7 +25,7 @@
         </button>
         %{--Member Action Menu--}%
         <ul class="navbar-nav ml-auto">
-            <UIHelper:memberActionMenu/>
+            <admin:memberActionMenu/>
         </ul>
     </nav>
 </header>
