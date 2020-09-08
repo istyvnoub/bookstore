@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 mx-auto">
-                    <h1 class="text-center login-title">Contacts Book Member Login</h1>
+                    <h1 class="text-center login-title">Bookstore Member Login</h1>
                     <div class="account-wall">
                         <g:img dir="images" file="grails.svg" class="profile-img"/>
                         <g:form controller="authentication" action="doLogin" class="form-signin">
