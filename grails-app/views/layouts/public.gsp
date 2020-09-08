@@ -32,18 +32,7 @@
 
 <div class="container-fluid">
     <div class="row">
-
-        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="#">Bookslist</a></li>
-                <li class="list-group-item"><a href="#">Books</a></li>
-                <li class="list-group-item"><a href="#">Contact</a></li>
-                <UIHelper:leftNavigation/>
-            </ul>
-        </nav>
-
-
-        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+        <main role="main" class="col-sm-12 ml-sm-auto col-md-12 pt-3">
             <g:layoutBody/>
         </main>
     </div>
